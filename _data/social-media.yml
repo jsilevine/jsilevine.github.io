@@ -1,0 +1,17 @@
+email:
+  id: 'jacoblevine@princeton.edu'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope'
+
+twitter:
+  id: 'jacob__levine'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter'
+
+github:
+  id: 'jsilevine'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github'
