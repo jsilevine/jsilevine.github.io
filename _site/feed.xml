@@ -1,17 +1,220 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-07T10:42:45-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jacob Levine Ecology</title><subtitle>Jacob Levine's research website - intended to be part CV, part communication channel for sharing my work and hopefully some helpful tidbits.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/04/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-04-23T16:55:30-05:00</published><updated>2020-04-23T16:55:30-05:00</updated><id>http://localhost:4000/jekyll/update/2020/04/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/23/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-07T16:28:16-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jacob Levine Ecology</title><subtitle>Jacob Levine's research website - intended to be part CV, part communication channel for sharing my work and hopefully some helpful tidbits.</subtitle><entry><title type="html">How To Use Github: A Guide For Scientists</title><link href="http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html" rel="alternate" type="text/html" title="How To Use Github: A Guide For Scientists" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://localhost:4000/2021/09/06/How-to-use-Github:-A-Guide-For-Scientists</id><content type="html" xml:base="http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html">&lt;h1 id=&quot;how-to-use-github&quot;&gt;How to use Github&lt;/h1&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;p&gt;This is a basic startup guide for Levine Lab members who are either a) new to Github or b) who need a refresher on basic functions. Github itself has &lt;a href=&quot;https://docs.github.com/en&quot;&gt;great documentation&lt;/a&gt; if you would like to learn to use more advanced features.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-connecting-your-computer-to-github-with-ssh&quot;&gt;1. Connecting your computer to github with ssh&lt;/h2&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Github has a &lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;detailed guide&lt;/a&gt; on this, though I will go through the basics for mac users (I think a majority of us) just so this is all in one place.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;SSH stands for “Secure SHell,” and is a network protocol for securely connecting over an unsecured network. It works through cryptographic elements called “keys”, which are unique to your device and must be generated in the command line. If you do remote computing you likely have an ssh key generated on your computer.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Once set up, ssh will allow you to integrate work on your local computer with the lab Github page with minimal hassle.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;h4 id=&quot;11-checking-for-existing-keys&quot;&gt;1.1 Checking for existing keys&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open terminal (or your preferred shell program)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -al ~/.ssh&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check if the directory lists a public ssh key. Should be something like: “id_rsa.pub”. If you already have a key, skip to section 1.4&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;12-generating-an-ssh-key&quot;&gt;1.2 Generating an ssh key&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;&lt;/code&gt; , but substitute the email address associated with your github account.&lt;/p&gt;
+
+    &lt;p&gt;The terminal should return: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt; Generating public/private ed25519 key pair.&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When asked to “Enter a file in which to save a key”, press enter.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Terminal will ask you to type a secure passphrase, choose something secure and write it down.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;13-adding-your-ssh-key-to-the-ssh-agent&quot;&gt;1.3 Adding your ssh key to the ssh-agent&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eval &quot;$(ssh-agent -s)&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you have macOS Sierra 10.12.2 or later you have to do some extra stuff.&lt;/p&gt;
+
+    &lt;p&gt;a. Check if a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt; file exists by entering &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;b. If the file doesn’t exist, create it by entering: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;c. Open the file by entering &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open ~/.ssh/config&lt;/code&gt;. A blank texteditor file should open.&lt;/p&gt;
+
+    &lt;p&gt;d. Copy the following into the opened file, then save and close the text editor. Note: you can also do this within terminal by typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nano ~/.ssh/config&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Host *
+     AddKeysToAgent yes
+     UseKeychain yes
+     IdentityFile ~/.ssh/id_ed25519
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add your ssh private key to the ssh-agent and store your passphrase in the keychain. To do so enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-add -K ~/.ssh/id_ed25519&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;14-add-ssh-key-to-your-github-account&quot;&gt;1.4 Add ssh key to your github account&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy ssh public key to your clipboard by entering &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pbcopy &amp;lt; ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the github website, click on your profile photo in the upper right and click “Settings”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the sidebaar select “SSH and GPG keys”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click “New SSH key”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add a title, maybe something like: “Jacob’s Macbook Pro”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Paste your key into the “key field”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click “Add SSH key”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;2-creating-and-cloning-repositories&quot;&gt;2. Creating and cloning repositories&lt;/h2&gt;
+
+&lt;p&gt;Github pages are made up of repositories. Repositories are essentially folders, hosted both on github and locally on your computer, that contain files relevent to a given project. Locally, git (the version control system github is based on) is used to track changes to files and maintain a log of previous versions. By connecting your local repository to Github, you both create a cloud-stored copy of you work, and allow for collaboration across devices. The integration of version control, storage and well-regulated collaboration is what makes Github so powerful.&lt;/p&gt;
+
+&lt;p&gt;First, lets learn how to create a new repository.&lt;/p&gt;
+
+&lt;h4 id=&quot;21-creating-a-new-repository-on-github&quot;&gt;2.1 Creating a new repository on Github&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;To create a new repository within the LevineEcology page, first navigate to the Group’s home page. Then, click the green-highlighted “New” button.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Name the repository, and enter that name into the “Repository name” entry box. For example, this repository is called “How-to-use-Github”. This name will be used in the link accessing this repository, i.e. “https://github.com/LevineEcology/How-to-use-Github”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add a description of the repository, so that future lab members will know what is contained there.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select the visibility of the repository, either public or private. Public repositories are openly available to anybody with the link, whereas private repositories are only visible to members of the organization. For example, this how-to repository is public, whereas my “SedgwickWaterCompetition” repo is private. Once published, I will likely make that repository public and link to it so that others may use my data and replicate my results – another benefit of Github.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select “Add a README file”. This is technically optional, but a README is generally a good idea and should be the place where you include general information and metadata about the repository so that others can make use of it without much headache. README’s are typically written in the (very intuitive) &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;markdown language&lt;/a&gt; and have the “.md” file extension. This file is written in markdown, for example.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select “create repository”.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;22-cloning-a-repository-to-your-local-device&quot;&gt;2.2 Cloning a repository to your local device&lt;/h4&gt;
+
+&lt;p&gt;Now that you have created a repository, it is time to create a copy of it on your local device (called “cloning”) and begin adding to it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate to the main page of your new repository.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click the green “Code” button.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select “SSH” at the top of the dropdown&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click the little clipboard icon to the right of the link, which should be something like: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git@github.com:LevineEcology/How-to-use-Github.git&lt;/code&gt;in order to copy the link to your clipboard.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt;, and then paste the URL you just copied i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone git@github.com:LevineEcology/How-to-use-Github.git&lt;/code&gt;. Press enter.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-working-on-a-repository--commits-and-pushes&quot;&gt;3. Working on a repository – Commits and Pushes&lt;/h2&gt;
+
+&lt;h4 id=&quot;31-adding-github-account-info-to-your-local-machine&quot;&gt;3.1 Adding Github account info to your local machine&lt;/h4&gt;
+
+&lt;p&gt;You will first want to give your Github account information to your local machine so that Github can recognize your interactions.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git config --global user.name &quot;YOUR_USERNAME&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git config --global user.email YOUR_EMAIL@EMAIL.COM&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;32-the-basic-gitgithub-workflow&quot;&gt;3.2 The basic Git/Github workflow&lt;/h4&gt;
+
+&lt;p&gt;What follows is the basic workflow for adding to or working on your repository. Essentially, you will make any changes or additions locally on your computer, in the folder you just cloned. You can create new .R files and save them to the folder, add word or excel documents, or create a nested folder structure. Then, when you are ready to save your changes/additions, you will do what is called a commit. When you perform a commit, git registers a new version of the repository that you can revert to at a later date if you need to. It is similar to saving a document in Word, for example, except that you create a permanent record of the document at each save point.&lt;/p&gt;
+
+&lt;p&gt;After you commit your work, you must also perform what is called a push. A push is what takes your changes from your local machine to the Github page. Without pushing, the only record of your commit is on your computer.&lt;/p&gt;
+
+&lt;p&gt;If using the command line is unappealing/scary etc. you can download and use Githubs GUI &lt;a href=&quot;https://desktop.github.com/&quot;&gt;here&lt;/a&gt;, though I have never used it. If you are unfamiliar with command line interaction it can be a bit weird/slow at first, but eventually it becomes fast and second nature.&lt;/p&gt;
+
+&lt;p&gt;Here is an example workflow, where we will make a simple edit to your repo’s README.md file.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate to your repository folder in terminal using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; (change directory), i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~/Documents/How-to-use-Github&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; into terminal and press enter to list the files in your repository. One of them should be called README.md&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open your README.md file in your favorite text editor (e.g. nano, vim, emacs, atom, TextEdit, etc). Nano is simplest for demonstration so I will do that here but the protocol is basically the same anywhere. To open with nano type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nano README.md&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Edit the README.md file by typing: “Hello!”, and then save the file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;At any time you can check git’s status by typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; in terminal, provided you are currently cd’d into your repository. If you type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; after modifying the README.md file, it should list it in red under “Changes not staged for Commit”. This means that if you performed a commit now, it would not include the changes you made to the README. To include those changes you need to first “add” the file to the commit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add README.md&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Retype &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt;. README.md should now be listed in green under “Changed to be committed”. In general you need to “add” any files you wish to be a part of your next commit in this way, you can add entire folders at a time if you would like using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add ~insert folder name~&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To commit your changes use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit&lt;/code&gt;. All commits must be supplied with a message, or you will get an error – usually this is just a brief description of your changes.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m &quot;My first commit&quot;&lt;/code&gt; into terminal.&lt;/p&gt;
+
+&lt;p&gt;Git should display a message summarizing the changes made in the commit.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Now it is time to push your commit to Github. To do so simply type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt; into your terminal window and press enter.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Congrats! You now know the basics of Github use. One thing I did not cover in this document is how to collaborate on a project using branches and pull requests. These are essential elements of Github, that I may later write sections on, but for now Github has some good tutorials available &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models&quot;&gt;on their site&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">How to use Github</summary></entry></feed>

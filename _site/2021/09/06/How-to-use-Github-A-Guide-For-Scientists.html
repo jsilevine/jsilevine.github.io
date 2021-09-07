@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://kit.fontawesome.com/8f0faf6121.js" crossorigin="anonymous"></script><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>How To Use Github: A Guide For Scientists | Jacob Levine Ecology</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="How To Use Github: A Guide For Scientists" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to use Github" />
+<meta property="og:description" content="How to use Github" />
+<link rel="canonical" href="http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html" />
+<meta property="og:url" content="http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html" />
+<meta property="og:site_name" content="Jacob Levine Ecology" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-06T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"How to use Github","headline":"How To Use Github: A Guide For Scientists","dateModified":"2021-09-06T00:00:00-05:00","datePublished":"2021-09-06T00:00:00-05:00","url":"http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jacob Levine Ecology" /></head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How To Use Github: A Guide For Scientists</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-09-06T00:00:00-05:00" itemprop="datePublished">Sep 6, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="how-to-use-github">How to use Github</h1>
+
+<p>This is a basic startup guide for Levine Lab members who are either a) new to Github or b) who need a refresher on basic functions. Github itself has <a href="https://docs.github.com/en">great documentation</a> if you would like to learn to use more advanced features.</p>
+
+<h2 id="1-connecting-your-computer-to-github-with-ssh">1. Connecting your computer to github with ssh</h2>
+
+<p>Github has a <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">detailed guide</a> on this, though I will go through the basics for mac users (I think a majority of us) just so this is all in one place.</p>
+
+<p>SSH stands for “Secure SHell,” and is a network protocol for securely connecting over an unsecured network. It works through cryptographic elements called “keys”, which are unique to your device and must be generated in the command line. If you do remote computing you likely have an ssh key generated on your computer.</p>
+
+<p>Once set up, ssh will allow you to integrate work on your local computer with the lab Github page with minimal hassle.</p>
+
+<h4 id="11-checking-for-existing-keys">1.1 Checking for existing keys</h4>
+
+<ol>
+  <li>
+    <p>Open terminal (or your preferred shell program)</p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">ls -al ~/.ssh</code></p>
+  </li>
+  <li>
+    <p>Check if the directory lists a public ssh key. Should be something like: “id_rsa.pub”. If you already have a key, skip to section 1.4</p>
+  </li>
+</ol>
+
+<h4 id="12-generating-an-ssh-key">1.2 Generating an ssh key</h4>
+
+<ol>
+  <li>
+    <p>Open terminal</p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">ssh-keygen -t ed25519 -C "your_email@example.com"</code> , but substitute the email address associated with your github account.</p>
+
+    <p>The terminal should return: <code class="language-plaintext highlighter-rouge">&gt; Generating public/private ed25519 key pair.</code></p>
+  </li>
+  <li>
+    <p>When asked to “Enter a file in which to save a key”, press enter.</p>
+  </li>
+  <li>
+    <p>Terminal will ask you to type a secure passphrase, choose something secure and write it down.</p>
+  </li>
+</ol>
+
+<h4 id="13-adding-your-ssh-key-to-the-ssh-agent">1.3 Adding your ssh key to the ssh-agent</h4>
+
+<ol>
+  <li>
+    <p>Open terminal</p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">eval "$(ssh-agent -s)"</code></p>
+  </li>
+  <li>
+    <p>If you have macOS Sierra 10.12.2 or later you have to do some extra stuff.</p>
+
+    <p>a. Check if a <code class="language-plaintext highlighter-rouge">~/.ssh/config</code> file exists by entering <code class="language-plaintext highlighter-rouge">open ~/.ssh/config</code></p>
+
+    <p>b. If the file doesn’t exist, create it by entering: <code class="language-plaintext highlighter-rouge">touch ~/.ssh/config</code></p>
+
+    <p>c. Open the file by entering <code class="language-plaintext highlighter-rouge">open ~/.ssh/config</code>. A blank texteditor file should open.</p>
+
+    <p>d. Copy the following into the opened file, then save and close the text editor. Note: you can also do this within terminal by typing <code class="language-plaintext highlighter-rouge">nano ~/.ssh/config</code>.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Host *
+     AddKeysToAgent yes
+     UseKeychain yes
+     IdentityFile ~/.ssh/id_ed25519
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add your ssh private key to the ssh-agent and store your passphrase in the keychain. To do so enter <code class="language-plaintext highlighter-rouge">ssh-add -K ~/.ssh/id_ed25519</code></p>
+  </li>
+</ol>
+
+<h4 id="14-add-ssh-key-to-your-github-account">1.4 Add ssh key to your github account</h4>
+
+<ol>
+  <li>
+    <p>Copy ssh public key to your clipboard by entering <code class="language-plaintext highlighter-rouge">pbcopy &lt; ~/.ssh/id_ed25519.pub</code></p>
+  </li>
+  <li>
+    <p>On the github website, click on your profile photo in the upper right and click “Settings”</p>
+  </li>
+  <li>
+    <p>In the sidebaar select “SSH and GPG keys”</p>
+  </li>
+  <li>
+    <p>Click “New SSH key”</p>
+  </li>
+  <li>
+    <p>Add a title, maybe something like: “Jacob’s Macbook Pro”</p>
+  </li>
+  <li>
+    <p>Paste your key into the “key field”</p>
+  </li>
+  <li>
+    <p>Click “Add SSH key”</p>
+  </li>
+</ol>
+
+<h2 id="2-creating-and-cloning-repositories">2. Creating and cloning repositories</h2>
+
+<p>Github pages are made up of repositories. Repositories are essentially folders, hosted both on github and locally on your computer, that contain files relevent to a given project. Locally, git (the version control system github is based on) is used to track changes to files and maintain a log of previous versions. By connecting your local repository to Github, you both create a cloud-stored copy of you work, and allow for collaboration across devices. The integration of version control, storage and well-regulated collaboration is what makes Github so powerful.</p>
+
+<p>First, lets learn how to create a new repository.</p>
+
+<h4 id="21-creating-a-new-repository-on-github">2.1 Creating a new repository on Github</h4>
+
+<ol>
+  <li>
+    <p>To create a new repository within the LevineEcology page, first navigate to the Group’s home page. Then, click the green-highlighted “New” button.</p>
+  </li>
+  <li>
+    <p>Name the repository, and enter that name into the “Repository name” entry box. For example, this repository is called “How-to-use-Github”. This name will be used in the link accessing this repository, i.e. “https://github.com/LevineEcology/How-to-use-Github”.</p>
+  </li>
+  <li>
+    <p>Add a description of the repository, so that future lab members will know what is contained there.</p>
+  </li>
+  <li>
+    <p>Select the visibility of the repository, either public or private. Public repositories are openly available to anybody with the link, whereas private repositories are only visible to members of the organization. For example, this how-to repository is public, whereas my “SedgwickWaterCompetition” repo is private. Once published, I will likely make that repository public and link to it so that others may use my data and replicate my results – another benefit of Github.</p>
+  </li>
+  <li>
+    <p>Select “Add a README file”. This is technically optional, but a README is generally a good idea and should be the place where you include general information and metadata about the repository so that others can make use of it without much headache. README’s are typically written in the (very intuitive) <a href="https://www.markdownguide.org/cheat-sheet/">markdown language</a> and have the “.md” file extension. This file is written in markdown, for example.</p>
+  </li>
+  <li>
+    <p>Select “create repository”.</p>
+  </li>
+</ol>
+
+<h4 id="22-cloning-a-repository-to-your-local-device">2.2 Cloning a repository to your local device</h4>
+
+<p>Now that you have created a repository, it is time to create a copy of it on your local device (called “cloning”) and begin adding to it.</p>
+
+<ol>
+  <li>
+    <p>Navigate to the main page of your new repository.</p>
+  </li>
+  <li>
+    <p>Click the green “Code” button.</p>
+  </li>
+  <li>
+    <p>Select “SSH” at the top of the dropdown</p>
+  </li>
+  <li>
+    <p>Click the little clipboard icon to the right of the link, which should be something like: <code class="language-plaintext highlighter-rouge">git@github.com:LevineEcology/How-to-use-Github.git</code>in order to copy the link to your clipboard.</p>
+  </li>
+  <li>
+    <p>Open terminal</p>
+  </li>
+  <li>
+    <p>Type <code class="language-plaintext highlighter-rouge">git clone</code>, and then paste the URL you just copied i.e. <code class="language-plaintext highlighter-rouge">git clone git@github.com:LevineEcology/How-to-use-Github.git</code>. Press enter.</p>
+  </li>
+</ol>
+
+<h2 id="3-working-on-a-repository--commits-and-pushes">3. Working on a repository – Commits and Pushes</h2>
+
+<h4 id="31-adding-github-account-info-to-your-local-machine">3.1 Adding Github account info to your local machine</h4>
+
+<p>You will first want to give your Github account information to your local machine so that Github can recognize your interactions.</p>
+
+<ol>
+  <li>
+    <p>Open terminal</p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">git config --global user.name "YOUR_USERNAME"</code></p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">git config --global user.email YOUR_EMAIL@EMAIL.COM</code></p>
+  </li>
+</ol>
+
+<h4 id="32-the-basic-gitgithub-workflow">3.2 The basic Git/Github workflow</h4>
+
+<p>What follows is the basic workflow for adding to or working on your repository. Essentially, you will make any changes or additions locally on your computer, in the folder you just cloned. You can create new .R files and save them to the folder, add word or excel documents, or create a nested folder structure. Then, when you are ready to save your changes/additions, you will do what is called a commit. When you perform a commit, git registers a new version of the repository that you can revert to at a later date if you need to. It is similar to saving a document in Word, for example, except that you create a permanent record of the document at each save point.</p>
+
+<p>After you commit your work, you must also perform what is called a push. A push is what takes your changes from your local machine to the Github page. Without pushing, the only record of your commit is on your computer.</p>
+
+<p>If using the command line is unappealing/scary etc. you can download and use Githubs GUI <a href="https://desktop.github.com/">here</a>, though I have never used it. If you are unfamiliar with command line interaction it can be a bit weird/slow at first, but eventually it becomes fast and second nature.</p>
+
+<p>Here is an example workflow, where we will make a simple edit to your repo’s README.md file.</p>
+
+<ol>
+  <li>
+    <p>Navigate to your repository folder in terminal using <code class="language-plaintext highlighter-rouge">cd</code> (change directory), i.e. <code class="language-plaintext highlighter-rouge">cd ~/Documents/How-to-use-Github</code></p>
+  </li>
+  <li>
+    <p>Type <code class="language-plaintext highlighter-rouge">ls</code> into terminal and press enter to list the files in your repository. One of them should be called README.md</p>
+  </li>
+  <li>
+    <p>Open your README.md file in your favorite text editor (e.g. nano, vim, emacs, atom, TextEdit, etc). Nano is simplest for demonstration so I will do that here but the protocol is basically the same anywhere. To open with nano type: <code class="language-plaintext highlighter-rouge">nano README.md</code></p>
+  </li>
+  <li>
+    <p>Edit the README.md file by typing: “Hello!”, and then save the file.</p>
+  </li>
+  <li>
+    <p>At any time you can check git’s status by typing <code class="language-plaintext highlighter-rouge">git status</code> in terminal, provided you are currently cd’d into your repository. If you type <code class="language-plaintext highlighter-rouge">git status</code> after modifying the README.md file, it should list it in red under “Changes not staged for Commit”. This means that if you performed a commit now, it would not include the changes you made to the README. To include those changes you need to first “add” the file to the commit.</p>
+  </li>
+  <li>
+    <p>Enter <code class="language-plaintext highlighter-rouge">git add README.md</code></p>
+  </li>
+  <li>
+    <p>Retype <code class="language-plaintext highlighter-rouge">git status</code>. README.md should now be listed in green under “Changed to be committed”. In general you need to “add” any files you wish to be a part of your next commit in this way, you can add entire folders at a time if you would like using <code class="language-plaintext highlighter-rouge">git add ~insert folder name~</code>.</p>
+  </li>
+  <li>
+    <p>To commit your changes use the command <code class="language-plaintext highlighter-rouge">git commit</code>. All commits must be supplied with a message, or you will get an error – usually this is just a brief description of your changes.</p>
+  </li>
+</ol>
+
+<p>Enter <code class="language-plaintext highlighter-rouge">git commit -m "My first commit"</code> into terminal.</p>
+
+<p>Git should display a message summarizing the changes made in the commit.</p>
+
+<ol>
+  <li>Now it is time to push your commit to Github. To do so simply type <code class="language-plaintext highlighter-rouge">git push</code> into your terminal window and press enter.</li>
+</ol>
+
+<p>Congrats! You now know the basics of Github use. One thing I did not cover in this document is how to collaborate on a project using branches and pull requests. These are essential elements of Github, that I may later write sections on, but for now Github has some good tutorials available <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models">on their site</a></p>
+
+
+  </div><a class="u-url" href="/2021/09/06/How-to-use-Github-A-Guide-For-Scientists.html" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

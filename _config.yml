@@ -28,6 +28,12 @@ url: "www.research.levinescience.co" # the base hostname & protocol for your sit
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+
+paginate: 5
+paginate_path: "/_posts/page:num/"
+
+markdown: kramdown
+
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:

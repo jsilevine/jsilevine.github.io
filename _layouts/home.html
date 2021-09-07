@@ -17,60 +17,18 @@ layout: default
     <!-- title with profile picture, name and description -->
     <img class = "title-image" src="/assets/profile.png">
     <h1 class="title-name">Jacob Levine</h1>
+
+    <body class = "about-body"> I am an ecologist focusing on a wide array of environmental topics including: fire ecology and management, biodiversity maintenance, competition and coexistence, ecophsyiology, and statistical methods. To explore these subjects I develop ecological theory and perform empirical studies and experiments, letting each inform the other in order to seek a more complete understanding of complex ecological systems. To aid in this pursuit, I leverage novel techniques in high-performance computing and statistical methods.
+     <br><br>Currently, I am a Ph.D candidate in the <a href = "https://eeb.princeton.edu/">Department of Ecology and Evolutionary Biology</a> at Princeton University. I work primarily with Professors <a href = "https://scholar.princeton.edu/pacala">Steve Pacala</a> and <a href = "https://levine.princeton.edu/">Jonathan Levine</a>, though maintain collaborations with my undergraduate advisors, <a href = "https://nature.berkeley.edu/stephenslab/">Scott Stephens</a>, <a href = "https://nature.berkeley.edu/~pdevalpine/">Perry de Valpine</a>, <a href = "https://nature.berkeley.edu/stephenslab/lab-members/dr-brandon-collins/">Brandon Collins</a> at UC Berkeley.
+.</body>
+
+
     {%- include social-links.html -%}
+
 
   </div>
 
-  <!--{{ content }}-->
 
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
 
 </div>
 

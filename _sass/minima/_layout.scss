@@ -103,6 +103,18 @@
 
 
 
+
+.page-header {
+
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  top: 0%;
+  background-color: $background-color;
+
+}
+
+
 /***/
 /**Header elements*/
 /***/
@@ -205,12 +217,11 @@
 /* Name and Image
  */
 .about {
-
+  margin-left: 20%;
   position: absolute;
-  width: 100%;
+  width: 60%;
   height: 100%;
   top: 100%;
-  margin-top: 0%;
   text-align: center;
   font-family: $base-font-family;
   
@@ -235,6 +246,18 @@
 
 }
 
+.about-body {
+
+  margin-top: 0px;
+  margin-left: 0%;
+  text-align: left;
+  width: 50%;
+  @include relative-font-size(1);
+  font-family: $base-font-family;
+  margin-bottom: 0px;
+  max-width: 50%;
+
+}
 
 
 /**/
@@ -247,6 +270,7 @@ i.fa {
   margin-right: 1em;
   color: $text-color;
   @include relative-font-size(1.5);
+  margin-top: 20px;
 
 }
 
@@ -254,7 +278,7 @@ i.fa {
 .social-media {
 
   text-align: center;
-  margin-top: -20px;
+
 
 }
 
@@ -342,16 +366,37 @@ i.fa {
 }
 
 .page-heading {
-  @include relative-font-size(2);
+@include relative-font-size(2);
+margin-left: 10%;
   font-family: $base-font-family;
 }
 
 .post-list-heading {
+margin-left: 10%;
   @include relative-font-size(1.75);
 }
 
+.posts-image {
+
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  margin-top: 3%;
+  background-image: url('./posts-image.jpg');
+  background-size: cover;
+
+}
+
+.posts-content {
+
+margin-left: 10%;
+margin-top: 18%;
+width: 80%;
+
+}
+
 .post-list {
-  margin-left: 0;
+  margin-left: 10%;
   list-style: none;
 
   > li {
@@ -375,7 +420,10 @@ i.fa {
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+margin-bottom: $spacing-unit;
+margin-left: 10%;
+margin-top: 5%;
+
 }
 
 .post-title {
@@ -389,6 +437,8 @@ i.fa {
 }
 
 .post-content {
+  width: 80%;
+  margin-left: 10%;
   margin-bottom: $spacing-unit;
 
   h2 {

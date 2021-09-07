@@ -1,4 +1,8 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /#about-section
+- name: Posts
+  link: /Posts
+- name: CV
+  link: /cv
