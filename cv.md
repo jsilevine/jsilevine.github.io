@@ -40,7 +40,7 @@ __University of California, Berkeley__
 ## Presentations
 
 
-## Other relevent research experience
+## Misc. Research Projects
 
 ## Awards
 
