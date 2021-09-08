@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
 <div class="home">
 
   <div class="home-image">
@@ -9,18 +19,37 @@ layout: default
       <h1 class="home-name">Jacob Levine</h1>
       <h2 class="home-description">Ecology | Statistics | Theory</h2>
     </div>
-  </div>
-
-  {%- include header.html -%}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style = "background-color: #FFFFFF;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{site.data.navigation[1].link}}">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{site.data.navigation[3].link}}">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{site.data.navigation[4].link}}">Projects</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{{site.data.navigation[2].link}}">Posts</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
 
   <div class = "about" id="about-section">
+
     <!-- title with profile picture, name and description -->
     <img class = "title-image" src="/assets/profile.png">
     <h1 class="title-name">Jacob Levine</h1>
 
     <body class = "about-body"> I am an ecologist focusing on a wide array of environmental topics including: fire ecology and management, biodiversity maintenance, competition and coexistence, ecophsyiology, and statistical methods. To explore these subjects I develop ecological theory and perform empirical studies and experiments, letting each inform the other in order to seek a more complete understanding of complex ecological systems. To aid in this pursuit, I leverage novel techniques in high-performance computing and statistical methods.
-     <br><br>Currently, I am a Ph.D candidate in the <a href = "https://eeb.princeton.edu/">Department of Ecology and Evolutionary Biology</a> at Princeton University. I work primarily with Professors <a href = "https://scholar.princeton.edu/pacala">Steve Pacala</a> and <a href = "https://levine.princeton.edu/">Jonathan Levine</a>, though maintain collaborations with my undergraduate advisors, <a href = "https://nature.berkeley.edu/stephenslab/">Scott Stephens</a>, <a href = "https://nature.berkeley.edu/~pdevalpine/">Perry de Valpine</a>, <a href = "https://nature.berkeley.edu/stephenslab/lab-members/dr-brandon-collins/">Brandon Collins</a> at UC Berkeley.
-.</body>
+      <br><br>Currently, I am a Ph.D candidate in the <a href = "https://eeb.princeton.edu/">Department of Ecology and Evolutionary Biology</a> at Princeton University. I work primarily with Professors <a href = "https://scholar.princeton.edu/pacala">Steve Pacala</a> and <a href = "https://levine.princeton.edu/">Jonathan Levine</a>, though maintain collaborations with my undergraduate advisors, <a href = "https://nature.berkeley.edu/stephenslab/">Scott Stephens</a>, <a href = "https://nature.berkeley.edu/~pdevalpine/">Perry de Valpine</a>, <a href = "https://nature.berkeley.edu/stephenslab/lab-members/dr-brandon-collins/">Brandon Collins</a> at UC Berkeley.
+    </body>
 
 
     {%- include social-links.html -%}
@@ -30,37 +59,6 @@ layout: default
 
 
 
-</div>
+  </div>
 
- <script type="text/javascript">
-    {% include js/layout.js %}
- </script>
-
-<!-- smooth scrolling behavior -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+  </div>

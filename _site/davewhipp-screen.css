@@ -47,9 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/* end of reset */
-
-
 
 body {
 	font: normal normal 400;
@@ -59,6 +56,7 @@ body {
 	font-family: "Karla", sans-serif;
 	margin-top: 1em;
 	margin-left: 1em;
+	padding: 3%;
 }
 
 p {
@@ -80,16 +78,16 @@ code {
 p code {
 	position: absolute;
 	text-align: right;
-	right: -20%;
+	right: -30%;
 }
 
 
 ul {
 	position: relative;
 	left: 25%;
-	width: 75%;
+	width: 41%;
 	margin-bottom: 1.5em;
-	margin-top: -0.5em;
+	margin-top: 0em;
 }
 
 /*uncomment to get dashes in the list*/
@@ -116,7 +114,7 @@ li ul {
 h1,h2,h3,h4 {
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
-	width: 80%;
+	width: 100%;
 }
 
 h1 {
@@ -130,7 +128,7 @@ h1 {
 h1+p {
 	/*subtitle*/
 	font-style: italic;
-	font-size: 110%;
+	font-size: 100%;
 }
 
 h2 {
@@ -193,3 +191,4 @@ strong {
 @media only screen and (max-width: 480px) {
 	make one column somehow...
 }*/
+x
