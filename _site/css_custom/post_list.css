@@ -1,0 +1,55 @@
+.page-content {
+  //padding: $spacing-unit 0;
+  flex: 1;
+  font-family: $base-font-family;
+}
+
+.page-heading {
+@include relative-font-size(2);
+margin-left: 10%;
+  font-family: $base-font-family;
+}
+
+.post-list-heading {
+margin-left: 10%;
+  @include relative-font-size(1.75);
+}
+
+.posts-image {
+
+position: absolute;
+  width: 100%;
+  height: 30%;
+  margin-top: 0%;
+  background-image: url('./posts-image.jpg');
+  background-size: cover;
+
+}
+
+.posts-content {
+
+position: absolute;
+margin-left: 10%;
+top: 40%;
+width: 80%;
+
+}
+
+.post-list {
+  margin-left: 10%;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}

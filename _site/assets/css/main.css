@@ -170,8 +170,6 @@ i.fa { display: inline-block; margin-right: 1em; color: #111; font-size: 24px; m
 
 .post-link { display: block; font-size: 24px; }
 
-.projects-image { position: absolute; height: 30%; }
-
 /** Posts */
 .post-header { margin-bottom: 30px; margin-left: 10%; margin-top: 5%; }
 
