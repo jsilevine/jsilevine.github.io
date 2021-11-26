@@ -22,7 +22,7 @@ title: Jacob Levine Ecology
 email: jacoblevine@princeton.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Jacob Levine's research website - intended to be part CV, part
-  communication channel for sharing my work and hopefully some helpful tidbits.
+  communication channel for sharing my work and some other random stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.research.levinescience.co" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -79,6 +79,9 @@ minima:
 
 # Build settings
 theme: minima
+
+# Excludes
+exclude: *.org
 
 
 plugins:

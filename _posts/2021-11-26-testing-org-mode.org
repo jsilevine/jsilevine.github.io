@@ -1,0 +1,13 @@
+#+TITLE: Testing Org Mode
+#+SUBTITLE: Can I use org mode to generate jekyll markdown?
+#+DATE: 2021-11-26
+
+* This is a header
+ this is some *bold* and /italicized/ text.
+
+
+\begin{equation}
+
+    \alpha = \beta * \frac{\gamma}{\epsilon_{1,2}}
+
+\end{equation}

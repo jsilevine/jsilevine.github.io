@@ -40,10 +40,10 @@ A list is also available [online](https://scholar.google.com/citations?user=qYyK
 **Jacob I. Levine**, Brandon M. Collins, Zachary L. Steel, Perry de Valpine, and Scott L. Stephens. High-severity fire incidence higher both on and near industrially managed forests. *Frontiers in Ecology and the Environment*.
 
 `2021`
-**Jacob I. Levine**, Perry de Valpine, and John J. Battles. [Generalized additive models reveal among-stand variation in live tree biomass equations](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0219). *Canadian Journal of Forest Research*. 51 (4), 546-564.
+**Jacob I. Levine**, Perry de Valpine, and John J. Battles. Generalized additive models reveal among-stand variation in live tree biomass equations ([link](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0219)). *Canadian Journal of Forest Research*. 51 (4), 546-564. 
 
 `2020`
-**Jacob I. Levine**, Brandon M. Collins, Robert A. York, Daniel E. Foster, Danny L. Fry, Scott L. Stephens. [Forest stand and site characteristics influence fuel consumption in repeat prescribed burns](https://www.publish.csiro.au/wf/WF19043). *International Journal of Wildland Fire*. 29 (2), 148-159
+**Jacob I. Levine**, Brandon M. Collins, Robert A. York, Daniel E. Foster, Danny L. Fry, Scott L. Stephens. Forest stand and site characteristics influence fuel consumption in repeat prescribed burns ([link](https://www.publish.csiro.au/wf/WF19043)). *International Journal of Wildland Fire*. 29 (2), 148-159
 
 ### Complete List
 
@@ -54,16 +54,16 @@ A list is also available [online](https://scholar.google.com/citations?user=qYyK
 Robert A. York, **Jacob I. Levine**, Daniel E. Foster, Scott L. Stephens, and Brandon M. Collins. Silviculture can facilitate repeat prescribed burn programs with long-term strategies. *California Agriculture*.
 
 `In Press`
-Robert A. York, **Jacob I. Levine**, Kane Russell and Joe Restaino. [Opportunities for winter prescribed burning in mixed conifer plantations of the Sierra Nevada](https://assets.researchsquare.com/files/rs-423745/v1/f4ed72d4-0bed-4373-9438-17add2ebd65b.pdf?c=1620138677). *Fire Ecology*. 
+Robert A. York, **Jacob I. Levine**, Kane Russell and Joe Restaino. Opportunities for winter prescribed burning in mixed conifer plantations of the Sierra Nevada ([link](https://assets.researchsquare.com/files/rs-423745/v1/f4ed72d4-0bed-4373-9438-17add2ebd65b.pdf?c=1620138677)). *Fire Ecology*. 
 
 `2021`
-**Jacob I. Levine**, Perry de Valpine, and John J. Battles. [Generalized additive models reveal among-stand variation in live tree biomass equations](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0219). *Canadian Journal of Forest Research*. 51 (4), 546-564.
+**Jacob I. Levine**, Perry de Valpine, and John J. Battles. Generalized additive models reveal among-stand variation in live tree biomass equations ([link](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0219)). *Canadian Journal of Forest Research*. 51 (4), 546-564.
 
 `2021`
-Melissa Jaffe, Brandon M. Collins, **Jacob I. Levine**, Hudson Northrop, Francesco Malandra, Daniel Krofcheck, Matthew D. Hurteau, Scott L. Stephens, and Malcom North. [Prescribed fire shrub consumption in a Sierra Nevada mixed-conifer forest](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0454). *Canadian Journal of Forest Research*. 
+Melissa Jaffe, Brandon M. Collins, **Jacob I. Levine**, Hudson Northrop, Francesco Malandra, Daniel Krofcheck, Matthew D. Hurteau, Scott L. Stephens, and Malcom North. Prescribed fire shrub consumption in a Sierra Nevada mixed-conifer forest ([link](https://cdnsciencepub.com/doi/abs/10.1139/cjfr-2020-0454)). *Canadian Journal of Forest Research*. 
 
 `2020`
-**Jacob I. Levine**, Brandon M. Collins, Robert A. York, Daniel E. Foster, Danny L. Fry, Scott L. Stephens. [Forest stand and site characteristics influence fuel consumption in repeat prescribed burns](https://www.publish.csiro.au/wf/WF19043). *International Journal of Wildland Fire*. 29 (2), 148-159
+**Jacob I. Levine**, Brandon M. Collins, Robert A. York, Daniel E. Foster, Danny L. Fry, Scott L. Stephens. Forest stand and site characteristics influence fuel consumption in repeat prescribed burns ([link](https://www.publish.csiro.au/wf/WF19043)). *International Journal of Wildland Fire*. 29 (2), 148-159
 
 
 ## Presentations
@@ -94,31 +94,31 @@ Developed a [repository](https://r-nimble.org/nimbleExamples/Ecology_Examples.ht
 ## Grants and Awards
 
 `2021`
-__[Hack Graduate Award](https://environment.princeton.edu/news/2021-hack-graduate-award-recipients-take-on-water-issues-from-bacterial-gels-to-plant-diversity-in-arid-climates/) for Water and the Environment__
+__[Hack Graduate Award for Water and the Environment](https://environment.princeton.edu/news/2021-hack-graduate-award-recipients-take-on-water-issues-from-bacterial-gels-to-plant-diversity-in-arid-climates/)__
 - *Proposal title:* "Maintenance of biodiversity in water-limited plant communities"
 
 `2019`
-__National Science Foundation [Graduate Research Fellowship](https://www.nsfgrfp.org/)__
+__[National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/)__
 - *Proposal title:* "Drivers of increased large-fire occurrence in California"
 
 `2018`
-__Ben Meadows [National Academic Award](https://www.pr.com/press-release/726240)__
+__[Ben Meadows National Academic Award](https://www.pr.com/press-release/726240)__
 - Awarded annually by the Society of American Foresters to a student who excels in academic and research pursuits
 
 `2018`
-__California Alumni Foresters [Scholarship](https://caforesters.wordpress.com/scholarships/)__
+__[California Alumni Foresters Scholarship](https://caforesters.wordpress.com/scholarships/)__
 - Awarded to outstanding students who have demonstrated a natural resources management path
 
 `2018`
-__[Melis Medal](https://plantandmicrobiology.berkeley.edu/news/honoring-anastasios-melis-faculty-founder-cnr-honors-research-program) -- UC Berkeley Rausser College of Natural Resources Honors Program__
+__[Melis Medal -- UC Berkeley Rausser College of Natural Resources Honors Program](https://plantandmicrobiology.berkeley.edu/news/honoring-anastasios-melis-faculty-founder-cnr-honors-research-program)__
 - Award given to the honors student with the best presentation at the annual honors thesis symposium
 
 `2018`
-__UC Berkeley Rausser College of Natural Resources [Honors Program](https://nature.berkeley.edu/advising/honors-program)__
+__[UC Berkeley Rausser College of Natural Resources Honors Program](https://nature.berkeley.edu/advising/honors-program)__
 - Undergraduate honors research program for students who demonstrate strong academic performance
 
 `2017`
-__George and Craig Vi [Western Timber Award](https://nature.berkeley.edu/craig-california-forestry-association-fund)__
+__[George and Craig Vi Western Timber Award](https://nature.berkeley.edu/craig-california-forestry-association-fund)__
 - Awarded to top Forestry students based on academic performance
 
 ### Last updated
