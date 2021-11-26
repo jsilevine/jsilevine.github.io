@@ -6,8 +6,4 @@
  this is some *bold* and /italicized/ text.
 
 
-\begin{equation}
-
-    \alpha = \beta * \frac{\gamma}{\epsilon_{1,2}}
-
-\end{equation}
+ $$\alpha = \beta * \frac{\gamma}{\epsilon_{1,2}}$$

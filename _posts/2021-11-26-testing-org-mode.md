@@ -9,20 +9,16 @@ tags:
 
 # Table of Contents
 
-1.  [This is a header](#orgc97dd46)
+1.  [This is a header](#org4fbf310)
 
 
-<a id="orgc97dd46"></a>
+<a id="org4fbf310"></a>
 
 # This is a header
 
 this is some **bold** and *italicized* text.
 
-\begin{equation}
-
-    \alpha = \beta \* \frac{\gamma}{\epsilon\_{1,2}}
-
-\end{equation}
+\\[\alpha = \beta \* \frac{\gamma}{\epsilon\_{1,2}}\\]
 
 
 <!----- Footnotes ----->
