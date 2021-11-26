@@ -81,7 +81,8 @@ minima:
 theme: minima
 
 # Excludes
-exclude: *.org
+exclude:
+    - *.org
 
 
 plugins:
